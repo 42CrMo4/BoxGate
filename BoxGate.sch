@@ -1,0 +1,156 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xGxx:SN74LVC1G14DBV U?
+U 1 1 6026616A
+P 2700 2450
+F 0 "U?" H 2750 2600 50  0000 L CNN
+F 1 "SN74LVC1G14DBV" H 2750 2300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2700 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf" H 2700 2450 50  0001 C CNN
+	1    2700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:SN74LVC1G14DBV U?
+U 1 1 60266A03
+P 2700 2950
+F 0 "U?" H 2750 3100 50  0000 L CNN
+F 1 "SN74LVC1G14DBV" H 2750 2800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2700 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf" H 2700 2950 50  0001 C CNN
+	1    2700 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L 74xGxx:74LVC1G02 U?
+U 1 1 60266E9E
+P 4400 2750
+F 0 "U?" H 4375 3017 50  0000 C CNN
+F 1 "74LVC1G02" H 4375 2926 50  0000 C CNN
+F 2 "" H 4400 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4400 2750 50  0001 C CNN
+	1    4400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2450 3800 2450
+Wire Wire Line
+	3800 2450 3800 2700
+Wire Wire Line
+	3800 2700 4100 2700
+Wire Wire Line
+	4100 2800 3800 2800
+Wire Wire Line
+	3800 2800 3800 2950
+Wire Wire Line
+	3800 2950 3000 2950
+$Comp
+L 74xGxx:SN74LVC1G14DBV U?
+U 1 1 6026B19B
+P 1800 2450
+F 0 "U?" H 1850 2600 50  0000 L CNN
+F 1 "SN74LVC1G14DBV" H 1850 2300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1800 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf" H 1800 2450 50  0001 C CNN
+	1    1800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:SN74LVC1G14DBV U?
+U 1 1 6026B1A1
+P 1800 2950
+F 0 "U?" H 1850 3100 50  0000 L CNN
+F 1 "SN74LVC1G14DBV" H 1850 2800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1800 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf" H 1800 2950 50  0001 C CNN
+	1    1800 2950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2100 2450 2500 2450
+Wire Wire Line
+	2100 2950 2500 2950
+Wire Wire Line
+	2700 2650 2700 2700
+Wire Wire Line
+	2700 2700 1800 2700
+Wire Wire Line
+	1800 2700 1800 2650
+Connection ~ 2700 2700
+Wire Wire Line
+	2700 2700 2700 2750
+Wire Wire Line
+	1800 2750 1800 2700
+Connection ~ 1800 2700
+$Comp
+L power:GND #PWR?
+U 1 1 6026D293
+P 1400 2700
+F 0 "#PWR?" H 1400 2450 50  0001 C CNN
+F 1 "GND" H 1405 2527 50  0000 C CNN
+F 2 "" H 1400 2700 50  0001 C CNN
+F 3 "" H 1400 2700 50  0001 C CNN
+	1    1400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2700 1800 2700
+$Comp
+L power:VCC #PWR?
+U 1 1 6026DDE6
+P 2250 2100
+F 0 "#PWR?" H 2250 1950 50  0001 C CNN
+F 1 "VCC" H 2265 2273 50  0000 C CNN
+F 2 "" H 2250 2100 50  0001 C CNN
+F 3 "" H 2250 2100 50  0001 C CNN
+	1    2250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6026EB6D
+P 2250 3350
+F 0 "#PWR?" H 2250 3200 50  0001 C CNN
+F 1 "VCC" H 2265 3523 50  0000 C CNN
+F 2 "" H 2250 3350 50  0001 C CNN
+F 3 "" H 2250 3350 50  0001 C CNN
+	1    2250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3350 2250 3400
+Wire Wire Line
+	2250 3400 2700 3400
+Wire Wire Line
+	2700 3400 2700 3150
+Wire Wire Line
+	2250 3400 1800 3400
+Wire Wire Line
+	1800 3400 1800 3150
+Connection ~ 2250 3400
+Wire Wire Line
+	2700 2250 2700 2150
+Wire Wire Line
+	2700 2150 2250 2150
+Wire Wire Line
+	1800 2150 1800 2250
+Wire Wire Line
+	2250 2100 2250 2150
+Connection ~ 2250 2150
+Wire Wire Line
+	2250 2150 1800 2150
+$EndSCHEMATC
